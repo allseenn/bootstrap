@@ -1,0 +1,18 @@
+<style>
+#toggle ~ .text1 {
+    display: block;
+}
+#toggle ~ .text2 {
+    display: none;
+}
+#toggle:checked ~ .text2 {
+    display: block;
+}
+#toggle:checked ~ .text1 {
+    display: none;
+}
+</style>
+<input type="checkbox" id="toggle">
+<label for="toggle">Сменить текст</label>
+<p class="text1">Первый текст</p>
+<p class="text2">Второй текст</p>
